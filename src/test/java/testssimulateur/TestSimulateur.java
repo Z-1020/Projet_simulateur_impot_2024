@@ -6,6 +6,8 @@ import com.kerware.simulateur.SituationFamiliale;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -22,23 +24,24 @@ public class TestSimulateur {
         }
     }
 
-    @Test
-    @DisplayName( "Test du calcul de l'impot pour un célibataire sans enfant")
-    public void testImpotSurRevenuNetPourUnCelibataireSansEnfant() {
+    private void tester(int revenuNet, SituationFamiliale sf, int nbEnfants, int nbEnfantsH, boolean parentIsole, int impotSurRevenuNetAttendu) {
         // Arrange
-        calculateur.setRevenusNet(35000);
-        calculateur.setSituationFamiliale( SituationFamiliale.CELIBATAIRE );
-        calculateur.setNbEnfantsACharge(0);
-        calculateur.setNbEnfantsSituationHandicap(0);
-        calculateur.setParentIsole( false );
+        calculateur.setRevenusNet(revenuNet);
+        calculateur.setSituationFamiliale(sf);
+        calculateur.setNbEnfantsACharge(nbEnfants);
+        calculateur.setNbEnfantsSituationHandicap(nbEnfantsH);
+        calculateur.setParentIsole(parentIsole);
 
         // Act
         calculateur.calculImpotSurRevenuNet();
 
         // Assert
-        assertEquals( 2736 , calculateur.getImpotSurRevenuNet());
-        assertEquals( 1 , calculateur.getNbPartsFoyerFiscal());
-
+        assertEquals( impotSurRevenuNetAttendu , calculateur.getImpotSurRevenuNet());
     }
 
+    @ParameterizedTest(name = "{6}")
+    @CsvFileSource(resources = "/TestData.csv", numLinesToSkip = 1)
+    public void test(int revenuNet, String situation, int nbEnfants, int nbEnfantsH, boolean parentIsole, int impotAttendu, String description) {
+        tester(revenuNet, SituationFamiliale.valueOf(situation), nbEnfants, nbEnfantsH, parentIsole, impotAttendu);
+    }
 }
