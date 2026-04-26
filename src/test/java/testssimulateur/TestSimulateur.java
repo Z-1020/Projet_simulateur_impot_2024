@@ -48,9 +48,11 @@ public class TestSimulateur {
 
         // Act
         if(abattementAttendu.equals("IllegalArgumentException")) {
+            // Assert
             assertThrows(IllegalArgumentException.class, () -> calculateur.calculImpotSurRevenuNet());
         } else {
             calculateur.calculImpotSurRevenuNet();
+            // Assert
             assertEquals(Integer.valueOf(abattementAttendu), calculateur.getAbattement());
         }
     }
@@ -68,9 +70,11 @@ public class TestSimulateur {
 
         // Act
         if(nbPartsAttendues.equals("IllegalArgumentException")) {
+            // Assert
             assertThrows(IllegalArgumentException.class, () -> calculateur.getNbPartsFoyerFiscal());
         } else {
             calculateur.calculImpotSurRevenuNet();
+            // Assert
             assertEquals(Double.valueOf(nbPartsAttendues), calculateur.getNbPartsFoyerFiscal());
         }
     }
