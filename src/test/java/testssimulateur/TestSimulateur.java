@@ -42,7 +42,7 @@ public class TestSimulateur {
 
     @ParameterizedTest(name = "EXG_IMPOT_02 {2}")
     @CsvFileSource(resources = "/EXG_IMPOT_02_TestData.csv", numLinesToSkip = 1)
-    public void test(int revenuNet, String abattementAttendu, String description) {
+    public void testEXG_IMPOT_02(int revenuNet, String abattementAttendu, String description) {
         // Arrange
         calculateur.setRevenusNet(revenuNet);
 
@@ -52,6 +52,26 @@ public class TestSimulateur {
         } else {
             calculateur.calculImpotSurRevenuNet();
             assertEquals(Integer.valueOf(abattementAttendu), calculateur.getAbattement());
+        }
+    }
+
+    @ParameterizedTest(name = "EXG_IMPOT_03 {5}")
+    @CsvFileSource(resources = "/EXG_IMPOT_03_TestData.csv", numLinesToSkip = 1)
+    public void testEXG_IMPOT_03(String situationMaritale, int nbEnfants, int nbEnfantsH, boolean parentIsole, String nbPartsAttendues, String description) {
+
+        // Arrange
+        calculateur.setSituationFamiliale(SituationFamiliale.valueOf(situationMaritale));
+        calculateur.setNbEnfantsACharge(nbEnfants);
+        calculateur.setNbEnfantsSituationHandicap(nbEnfantsH);
+        calculateur.setParentIsole(parentIsole);
+
+
+        // Act
+        if(nbPartsAttendues.equals("IllegalArgumentException")) {
+            assertThrows(IllegalArgumentException.class, () -> calculateur.getNbPartsFoyerFiscal());
+        } else {
+            calculateur.calculImpotSurRevenuNet();
+            assertEquals(Double.valueOf(nbPartsAttendues), calculateur.getNbPartsFoyerFiscal());
         }
     }
 }
