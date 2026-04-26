@@ -10,6 +10,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class TestSimulateur {
     static final int CODE_HERITE = 1;
@@ -39,9 +40,18 @@ public class TestSimulateur {
         assertEquals( impotSurRevenuNetAttendu , calculateur.getImpotSurRevenuNet());
     }
 
-    @ParameterizedTest(name = "{6}")
-    @CsvFileSource(resources = "/TestData.csv", numLinesToSkip = 1)
-    public void test(int revenuNet, String situation, int nbEnfants, int nbEnfantsH, boolean parentIsole, int impotAttendu, String description) {
-        tester(revenuNet, SituationFamiliale.valueOf(situation), nbEnfants, nbEnfantsH, parentIsole, impotAttendu);
+    @ParameterizedTest(name = "EXG_IMPOT_02 {2}")
+    @CsvFileSource(resources = "/EXG_IMPOT_02_TestData.csv", numLinesToSkip = 1)
+    public void test(int revenuNet, String abattementAttendu, String description) {
+        // Arrange
+        calculateur.setRevenusNet(revenuNet);
+
+        // Act
+        if(abattementAttendu.equals("IllegalArgumentException")) {
+            assertThrows(IllegalArgumentException.class, () -> calculateur.calculImpotSurRevenuNet());
+        } else {
+            calculateur.calculImpotSurRevenuNet();
+            assertEquals(Integer.valueOf(abattementAttendu), calculateur.getAbattement());
+        }
     }
 }
