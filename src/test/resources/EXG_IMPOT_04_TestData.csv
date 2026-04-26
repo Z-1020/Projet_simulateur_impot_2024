@@ -1,4 +1,39 @@
-revenuNet,situationMaritale,nbEnfants,nbEnfantsH,parentIsole,impotAttendu,description
--1,CELIBATAIRE,0,0,false,IllegalArgumentException,Test exception revenu net négatif.
-0,CELIBATAIRE,0,0,false,0,Test célibataire sans enfants avec 0€ de revenu net.
-11294,CELIBATAIRE,0,0,false,1242,Test célibataire sans enfants avec 11294€ de revenu net.
+revenuNet,situationMaritale,nbEnfants,nbEnfantsH,parentIsole,nbParts,revenuFiscalDeReference,revenuFiscalDeReferenceParParts,impotAvantDecote,description
+-1,CELIBATAIRE,0,0,false,1,0,0,IllegalArgumentException,Test exception revenu net négatif.
+0,CELIBATAIRE,0,0,false,1,0,0,0,Test célibataire sans enfants (1 part) avec 0€ de revenu net (pas d’impôt).
+12549,CELIBATAIRE,0,0,false,1,11294,11294,0,"Test célibataire sans enfants (1 part) avec 12549€ de revenu net (pas d’impôt, 11294€ revenu fiscal de référence)."
+12550,CELIBATAIRE,0,0,false,1,11295,11295,0,Test célibataire sans enfants (1 part) avec 11295€ de revenu net (11295€ de revenu fiscal de référence).
+12559,CELIBATAIRE,0,0,false,1,11303,11303,0,Test célibataire sans enfants (1 part) avec 12559€ de revenu net (11303€ de revenu fiscal de référence).
+12560,CELIBATAIRE,0,0,false,1,11304,11304,1,Test célibataire sans enfants (1 part) avec 12560€ de revenu net (11304€ de revenu fiscal de référence).
+20000,CELIBATAIRE,0,0,false,1,18000,18000,738,Test célibataire sans enfants (1 part) avec 20000€ de revenu net (18000€ de revenu fiscal de référence).
+31997,CELIBATAIRE,0,0,false,1,28797,28797,1925,Test célibataire sans enfants (1 part) avec 31997€ de revenu net (28797€ de revenu fiscal de référence).
+31998,CELIBATAIRE,0,0,false,1,28798,28798,1926,Test célibataire sans enfants (1 part) avec 31998€ de revenu net (28798€ de revenu fiscal de référence).
+40000,CELIBATAIRE,0,0,false,1,36000,36000,4086,Test célibataire sans enfants (1 part) avec 40000€ de revenu net (36000€ de revenu fiscal de référence).
+91490,CELIBATAIRE,0,0,false,1,82341,82341,17989,Test célibataire sans enfants (1 part) avec 91490€ de revenu net (82341€ de revenu fiscal de référence).
+91491,CELIBATAIRE,0,0,false,1,82342,82342,17989,Test célibataire sans enfants (1 part) avec 91491€ de revenu net (82342€ de revenu fiscal de référence).
+91493,CELIBATAIRE,0,0,false,1,82344,82344,17990,Test célibataire sans enfants (1 part) avec 91493€ de revenu net (82344€ de revenu fiscal de référence).
+141710,CELIBATAIRE,0,0,false,1,127539,127539,36520,Test célibataire sans enfants (1 part) avec 141710€ de revenu net (127539€ de revenu fiscal de référence) (abattement maximal).
+141711,CELIBATAIRE,0,0,false,1,127540,127540,36520,Test célibataire sans enfants (1 part) avec 141711€ de revenu net (127540€ de revenu fiscal de référence) (abattement maximal).
+141720,CELIBATAIRE,0,0,false,1,127549,127549,36524,Test célibataire sans enfants (1 part) avec 141720€ de revenu net (127549€ de revenu fiscal de référence) (abattement maximal).
+191277,CELIBATAIRE,0,0,false,1,177106,177106,56842,Test célibataire sans enfants (1 part) avec 191277€ de revenu net (177106€ de revenu fiscal de référence) (abattement maximal).
+191278,CELIBATAIRE,0,0,false,1,177107,177107,56843,Test célibataire sans enfants (1 part) avec 191278€ de revenu net (177107€ de revenu fiscal de référence) (abattement maximal).
+220000,CELIBATAIRE,0,0,false,1,205829,205829,69768,Test célibataire sans enfants (1 part) avec 220000€ de revenu net (205829€ de revenu fiscal de référence) (abattement maximal).
+,,,,,,,,,
+0,MARIE,0,0,false,2,0,0,0,Test marié sans enfants (1 part) avec 0€ de revenu net (pas d’impôt).
+12549,MARIE,0,0,false,2,11294,5647,0,"Test marié sans enfants (1 part) avec 12549€ de revenu net (pas d’impôt, 11294€ revenu fiscal de référence)."
+12550,MARIE,0,0,false,2,11295,"5647,5",0,Test marié sans enfants (1 part) avec 11295€ de revenu net (11295€ de revenu fiscal de référence).
+12559,MARIE,0,0,false,2,11303,"5651,5",0,Test marié sans enfants (1 part) avec 12559€ de revenu net (11303€ de revenu fiscal de référence).
+12560,MARIE,0,0,false,2,11304,5652,1,Test marié sans enfants (1 part) avec 12560€ de revenu net (11304€ de revenu fiscal de référence).
+20000,MARIE,0,0,false,2,18000,9000,738,Test marié sans enfants (1 part) avec 20000€ de revenu net (18000€ de revenu fiscal de référence).
+31997,MARIE,0,0,false,2,28797,"14398,5",1925,Test marié sans enfants (1 part) avec 31997€ de revenu net (28797€ de revenu fiscal de référence).
+31998,MARIE,0,0,false,2,28798,14399,1926,Test marié sans enfants (1 part) avec 31998€ de revenu net (28798€ de revenu fiscal de référence).
+40000,MARIE,0,0,false,2,36000,18000,4086,Test marié sans enfants (1 part) avec 40000€ de revenu net (36000€ de revenu fiscal de référence).
+91490,MARIE,0,0,false,2,82341,"41170,5",17989,Test marié sans enfants (1 part) avec 91490€ de revenu net (82341€ de revenu fiscal de référence).
+91491,MARIE,0,0,false,2,82342,41171,17989,Test marié sans enfants (1 part) avec 91491€ de revenu net (82342€ de revenu fiscal de référence).
+91493,MARIE,0,0,false,2,82344,41172,17990,Test marié sans enfants (1 part) avec 91493€ de revenu net (82344€ de revenu fiscal de référence).
+141710,MARIE,0,0,false,2,127539,"63769,5",36520,Test marié sans enfants (1 part) avec 141710€ de revenu net (127539€ de revenu fiscal de référence) (abattement maximal).
+141711,MARIE,0,0,false,2,127540,63770,36520,Test marié sans enfants (1 part) avec 141711€ de revenu net (127540€ de revenu fiscal de référence) (abattement maximal).
+141720,MARIE,0,0,false,2,127549,"63774,5",36524,Test marié sans enfants (1 part) avec 141720€ de revenu net (127549€ de revenu fiscal de référence) (abattement maximal).
+191277,MARIE,0,0,false,2,177106,88553,56842,Test marié sans enfants (1 part) avec 191277€ de revenu net (177106€ de revenu fiscal de référence) (abattement maximal).
+191278,MARIE,0,0,false,2,177107,"88553,5",56843,Test marié sans enfants (1 part) avec 191278€ de revenu net (177107€ de revenu fiscal de référence) (abattement maximal).
+220000,MARIE,0,0,false,2,205829,"102914,5",69768,Test marié sans enfants (1 part) avec 220000€ de revenu net (205829€ de revenu fiscal de référence) (abattement maximal).
