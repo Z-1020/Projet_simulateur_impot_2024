@@ -245,7 +245,7 @@ public class Simulateur {
 
     /** Partie ajoutée pour l'adaptation, pour rendre le code testable
      *
-     * Ajouté par Olivier CHARLES le 20/02/20026
+     * Ajouté par Olivier CHARLES le 20/02/2026
      */
 
     // Nouveaux champs
