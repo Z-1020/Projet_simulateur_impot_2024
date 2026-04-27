@@ -20,19 +20,38 @@ revenuNet,situationMaritale,nbEnfants,nbEnfantsH,parentIsole,nbParts,revenuFisca
 220000,CELIBATAIRE,0,0,false,1,205829,205829,69768,Test célibataire sans enfants (1 part) avec 220000€ de revenu net (205829€ de revenu fiscal de référence) (abattement maximal).
 0,MARIE,0,0,false,2,0,0,0,Test marié sans enfants (2 part) avec 0€ de revenu net (pas d’impôt).
 25098,MARIE,0,0,false,2,22588,11294,0,Test marié sans enfants (2 parts) avec 25098€ de revenu net (22588€ revenu fiscal de référence).
-25099,MARIE,0,0,false,2,22589,11295,0,Test marié sans enfants (2 parts) avec 25099€ de revenu net (22589€ revenu fiscal de référence).
+25099,MARIE,0,0,false,2,22589,"11294,5",0,Test marié sans enfants (2 parts) avec 25099€ de revenu net (22589€ revenu fiscal de référence).
+25100,MARIE,0,0,false,2,22590,11295,0,Test marié sans enfants (2 parts) avec 25100€ de revenu net (22590€ revenu fiscal de référence).
 25102,MARIE,0,0,false,2,22592,11296,0,Test marié sans enfants (2 parts) avec 25102€ de revenu net (22592€ revenu fiscal de référence).
-25103,MARIE,0,0,false,2,22593,11297,1,Test marié sans enfants (2 parts) avec 25103€ de revenu net (22593€ revenu fiscal de référence).
+25103,MARIE,0,0,false,2,22593,"11296,5",1,Test marié sans enfants (2 parts) avec 25103€ de revenu net (22593€ revenu fiscal de référence).
 40000,MARIE,0,0,false,2,36000,18000,1475,Test marié sans enfants (2 parts) avec 40000€ de revenu net (36000€ revenu fiscal de référence).
 63993,MARIE,0,0,false,2,57594,28797,3851,Test marié sans enfants (2 parts) avec 63993€ de revenu net (57594€ revenu fiscal de référence).
-63994,MARIE,0,0,false,2,57595,28798,3851,Test marié sans enfants (2 parts) avec 63994€ de revenu net (57595€ revenu fiscal de référence).
+63994,MARIE,0,0,false,2,57595,"28797,5",3851,Test marié sans enfants (2 parts) avec 63994€ de revenu net (57595€ revenu fiscal de référence).
 80000,MARIE,0,0,false,2,72000,36000,8172,Test marié sans enfants (2 parts) avec 80000€ de revenu net (72000€ revenu fiscal de référence).
 178853,MARIE,0,0,false,2,164682,82341,35977,Test marié sans enfants (2 parts) avec 178853€ de revenu net (164682€ revenu fiscal de référence).
 178854,MARIE,0,0,false,2,164683,"82341,5",35977,Test marié sans enfants (2 parts) avec 178854€ de revenu net (164683€ revenu fiscal de référence).
 178855,MARIE,0,0,false,2,164684,82342,35978,Test marié sans enfants (2 parts) avec 178855€ de revenu net (164684€ revenu fiscal de référence).
 269269,MARIE,0,0,false,2,255098,127549,73048,Test marié sans enfants (2 parts) avec 269269€ de revenu net (255098€ revenu fiscal de référence).
 368383,MARIE,0,0,false,2,354212,177106,113685,Test marié sans enfants (2 parts) avec 368383€ de revenu net (354212€ revenu fiscal de référence).
-368384,MARIE,0,0,false,2,354213,177107,113685,Test marié sans enfants (2 parts) avec 368384€ de revenu net (354213€ revenu fiscal de référence).
+368384,MARIE,0,0,false,2,354213,"177106,5",113685,Test marié sans enfants (2 parts) avec 368384€ de revenu net (354213€ revenu fiscal de référence).
 368385,MARIE,0,0,false,2,354214,177107,113685,Test marié sans enfants (2 parts) avec 368385€ de revenu net (354214€ revenu fiscal de référence).
-368386,MARIE,0,0,false,2,354215,177108,113686,Test marié sans enfants (2 parts) avec 368386€ de revenu net (354215€ revenu fiscal de référence).
+368386,MARIE,0,0,false,2,354215,"177107,5",113686,Test marié sans enfants (2 parts) avec 368386€ de revenu net (354215€ revenu fiscal de référence).
 425829,MARIE,0,0,false,2,411658,205829,139535,Test marié sans enfants (2 parts) avec 425829€ de revenu net (411658€ revenu fiscal de référence).
+0,VEUF,2,0,true,"3,5",,0,,
+25098,VEUF,2,0,true,"3,5",,11294,,
+25099,VEUF,2,0,true,"3,5",,11295,,
+25102,VEUF,2,0,true,"3,5",,11296,,
+25103,VEUF,2,0,true,"3,5",,11297,,
+40000,VEUF,2,0,true,"3,5",,18000,,
+63993,VEUF,2,0,true,"3,5",,28797,,
+63994,VEUF,2,0,true,"3,5",,28798,,
+80000,VEUF,2,0,true,"3,5",,36000,,
+178853,VEUF,2,0,true,"3,5",,82341,,
+178854,VEUF,2,0,true,"3,5",,"82341,5",,
+178855,VEUF,2,0,true,"3,5",,82342,,
+269269,VEUF,2,0,true,"3,5",,127549,,
+368383,VEUF,2,0,true,"3,5",,177106,,
+368384,VEUF,2,0,true,"3,5",,177107,,
+368385,VEUF,2,0,true,"3,5",,177107,,
+368386,VEUF,2,0,true,"3,5",,177108,,
+425829,VEUF,2,0,true,"3,5",,205829,,
