@@ -95,6 +95,7 @@ public class TestSimulateur {
         calculateur.calculImpotSurRevenuNet();
 
         // Assert
+        assertEquals(revenuFiscalDeReference, calculateur.getRevenuFiscalReference());
         assertEquals(impotAvantDecote, calculateur.getImpotAvantDecote());
     }
 }
