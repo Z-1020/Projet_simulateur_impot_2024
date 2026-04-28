@@ -4,8 +4,6 @@ import com.kerware.simulateur.AdaptateurVersCodeHerite;
 import com.kerware.simulateur.ICalculateurImpot;
 import com.kerware.simulateur.SituationFamiliale;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
@@ -79,8 +77,8 @@ public class TestSimulateur {
         }
     }
 
-    @ParameterizedTest(name = "EXG_IMPOT_04 {5}")
-    @CsvFileSource(resources = "/EXG_IMPOT_04_TestData.csv", numLinesToSkip = 1)
+    @ParameterizedTest(name = "EXG_IMPOT_04 and EXG_IMPOT_05 {5}")
+    @CsvFileSource(resources = "/EXG_IMPOT_04_05_TestData.csv", numLinesToSkip = 1)
     public void testEXG_IMPOT_04(int revenuNet, String situationMaritale, int nbEnfants, int nbEnfantsH, boolean parentIsole, double nbParts, int revenuFiscalDeReference, double revenuFiscalDeReferenceParParts, int impotAvantDecote, String description) {
 
         // Arrange
