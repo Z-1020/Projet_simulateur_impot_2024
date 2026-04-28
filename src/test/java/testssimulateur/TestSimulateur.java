@@ -78,4 +78,23 @@ public class TestSimulateur {
             assertEquals(Double.valueOf(nbPartsAttendues), calculateur.getNbPartsFoyerFiscal());
         }
     }
+
+    @ParameterizedTest(name = "EXG_IMPOT_04 {5}")
+    @CsvFileSource(resources = "/EXG_IMPOT_04_TestData.csv", numLinesToSkip = 1)
+    public void testEXG_IMPOT_04(int revenuNet, String situationMaritale, int nbEnfants, int nbEnfantsH, boolean parentIsole, double nbParts, int revenuFiscalDeReference, double revenuFiscalDeReferenceParParts, int impotAvantDecote, String description) {
+
+        // Arrange
+        calculateur.setRevenusNet(revenuNet);
+        calculateur.setSituationFamiliale(SituationFamiliale.valueOf(situationMaritale));
+        calculateur.setNbEnfantsACharge(nbEnfants);
+        calculateur.setNbEnfantsSituationHandicap(nbEnfantsH);
+        calculateur.setParentIsole(parentIsole);
+
+
+        // Act
+        calculateur.calculImpotSurRevenuNet();
+
+        // Assert
+        assertEquals(impotAvantDecote, calculateur.getImpotAvantDecote());
+    }
 }
