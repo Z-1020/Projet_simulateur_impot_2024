@@ -26,7 +26,7 @@ public class InformationsEnfants {
 		this.NbEnfantsSituationHandicap = NbEnfantsSituationHandicap;
 	}
 	
-	//	Setter	//
+	//	Setters	//
 	
 	/**
 	 * Permet de modifier le nombre d'enfants à charge
@@ -46,7 +46,7 @@ public class InformationsEnfants {
     	this.NbEnfantsSituationHandicap = NbEnfantsSituationHandicap;
     }
     
-    //	Getter	//
+    //	Getters	//
     
     /**
      * Retourne le nombre d'enfants à charge
