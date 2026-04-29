@@ -25,33 +25,41 @@ revenuNet,situationMaritale,nbEnfants,nbEnfantsH,parentIsole,nbParts,revenuFisca
 191277,CELIBATAIRE,0,0,false,1,177106,177106,56842,0,56842,Test célibataire sans enfants (1 part) avec 191277€ de revenu net (177106€ de revenu fiscal de référence) (abattement maximal).
 191278,CELIBATAIRE,0,0,false,1,177107,177107,56843,0,56843,Test célibataire sans enfants (1 part) avec 191278€ de revenu net (177107€ de revenu fiscal de référence) (abattement maximal).
 220000,CELIBATAIRE,0,0,false,1,205829,205829,69768,0,69768,Test célibataire sans enfants (1 part) avec 220000€ de revenu net (205829€ de revenu fiscal de référence) (abattement maximal).
-0,MARIE,0,0,false,2,0,0,0,,,Test marié sans enfants (2 part) avec 0€ de revenu net (pas d’impôt).
-25098,MARIE,0,0,false,2,22588,11294,0,,,Test marié sans enfants (2 parts) avec 25098€ de revenu net (22588€ revenu fiscal de référence).
-25099,MARIE,0,0,false,2,22589,"11294,5",0,,,Test marié sans enfants (2 parts) avec 25099€ de revenu net (22589€ revenu fiscal de référence).
-25100,MARIE,0,0,false,2,22590,11295,0,,,Test marié sans enfants (2 parts) avec 25100€ de revenu net (22590€ revenu fiscal de référence).
-25102,MARIE,0,0,false,2,22592,11296,0,,,Test marié sans enfants (2 parts) avec 25102€ de revenu net (22592€ revenu fiscal de référence).
-25103,MARIE,0,0,false,2,22593,"11296,5",1,,,Test marié sans enfants (2 parts) avec 25103€ de revenu net (22593€ revenu fiscal de référence).
-40000,MARIE,0,0,false,2,36000,18000,1475,,,Test marié sans enfants (2 parts) avec 40000€ de revenu net (36000€ revenu fiscal de référence).
-57325,PACSE,0,0,false,2,51593,"25796,5",3190,1,,
-57326,PACSE,0,0,false,2,51593,"25796,5",,0,,
-63993,MARIE,0,0,false,2,57594,28797,3851,,,Test marié sans enfants (2 parts) avec 63993€ de revenu net (57594€ revenu fiscal de référence).
-63994,MARIE,0,0,false,2,57595,"28797,5",3851,,,Test marié sans enfants (2 parts) avec 63994€ de revenu net (57595€ revenu fiscal de référence).
-80000,MARIE,0,0,false,2,72000,36000,8172,,,Test marié sans enfants (2 parts) avec 80000€ de revenu net (72000€ revenu fiscal de référence).
-178853,MARIE,0,0,false,2,164682,82341,35977,,,Test marié sans enfants (2 parts) avec 178853€ de revenu net (164682€ revenu fiscal de référence).
-178854,MARIE,0,0,false,2,164683,"82341,5",35977,,,Test marié sans enfants (2 parts) avec 178854€ de revenu net (164683€ revenu fiscal de référence).
-178855,MARIE,0,0,false,2,164684,82342,35978,,,Test marié sans enfants (2 parts) avec 178855€ de revenu net (164684€ revenu fiscal de référence).
-269269,MARIE,0,0,false,2,255098,127549,73048,,,Test marié sans enfants (2 parts) avec 269269€ de revenu net (255098€ revenu fiscal de référence).
-368383,MARIE,0,0,false,2,354212,177106,113685,,,Test marié sans enfants (2 parts) avec 368383€ de revenu net (354212€ revenu fiscal de référence).
-368384,MARIE,0,0,false,2,354213,"177106,5",113685,,,Test marié sans enfants (2 parts) avec 368384€ de revenu net (354213€ revenu fiscal de référence).
-368385,MARIE,0,0,false,2,354214,177107,113685,,,Test marié sans enfants (2 parts) avec 368385€ de revenu net (354214€ revenu fiscal de référence).
-368386,MARIE,0,0,false,2,354215,"177107,5",113686,,,Test marié sans enfants (2 parts) avec 368386€ de revenu net (354215€ revenu fiscal de référence).
-425829,MARIE,0,0,false,2,411658,205829,139535,,,Test marié sans enfants (2 parts) avec 425829€ de revenu net (411658€ revenu fiscal de référence).
-0,MARIE,1,0,false,"2,5",0,0,0,,,"Test marié avec 1 enfants (2,5 parts) avec 0€ de revenu net (0€ revenu fiscal de référence)."
-31374,MARIE,1,0,false,"2,5",28237,"11294,8",0,,,"Test marié avec 1 enfants (2,5 parts) avec 31374€ de revenu net (28237€ revenu fiscal de référence)."
-31375,MARIE,1,0,false,"2,5",28238,11295,0,,,"Test marié avec 1 enfants (2,5 parts) avec 31375€ de revenu net (28238€ revenu fiscal de référence)."
-31377,MARIE,1,0,false,"2,5",28239,"11295,6",0,,,"Test marié avec 1 enfants (2,5 parts) avec 31377€ de revenu net (28239€ revenu fiscal de référence)."
-31378,MARIE,1,0,false,"2,5",28240,11296,1,,,"Test marié avec 1 enfants (2,5 parts) avec 31378€ de revenu net (28240€ revenu fiscal de référence)."
-60000,MARIE,1,0,false,"2,5",54000,21600,2834,,,"Test marié avec 1 enfants (2,5 parts) avec 60000€ de revenu net (54000€ revenu fiscal de référence)."
+0,MARIE,0,0,false,2,0,0,0,0,0,Test marié sans enfants (2 part) avec 0€ de revenu net (pas d’impôt).
+25098,MARIE,0,0,false,2,22588,11294,0,0,0,Test marié sans enfants (2 parts) avec 25098€ de revenu net (22588€ revenu fiscal de référence).
+25099,MARIE,0,0,false,2,22589,"11294,5",0,0,0,Test marié sans enfants (2 parts) avec 25099€ de revenu net (22589€ revenu fiscal de référence).
+25100,MARIE,0,0,false,2,22590,11295,0,0,0,Test marié sans enfants (2 parts) avec 25100€ de revenu net (22590€ revenu fiscal de référence).
+25102,PACSE,0,0,false,2,22592,11296,0,0,0,Test marié sans enfants (2 parts) avec 25102€ de revenu net (22592€ revenu fiscal de référence).
+25103,MARIE,0,0,false,2,22593,"11296,5",1,1,0,Test marié sans enfants (2 parts) avec 25103€ de revenu net (22593€ revenu fiscal de référence).
+35142,MARIE,0,0,false,2,31628,15814,994,994,0,
+35143,MARIE,0,0,false,2,31629,"15814,5",995,994,1,
+35152,MARIE,0,0,false,2,31637,"15818,5",995,994,1,
+35153,MARIE,0,0,false,2,31638,15819,996,993,3,
+40000,MARIE,0,0,false,2,36000,18000,1475,777,698,Test marié sans enfants (2 parts) avec 40000€ de revenu net (36000€ revenu fiscal de référence).
+45000,PACSE,0,0,false,2,40500,20250,1970,553,1417,
+50000,PACSE,0,0,false,2,45000,25500,2465,329,2136,
+57325,PACSE,0,0,false,2,51593,"25796,5",3190,1,3189,
+57326,PACSE,0,0,false,2,51593,"25796,5",3191,0,3191,
+63993,MARIE,0,0,false,2,57594,28797,3851,0,3851,Test marié sans enfants (2 parts) avec 63993€ de revenu net (57594€ revenu fiscal de référence).
+63994,MARIE,0,0,false,2,57595,"28797,5",3851,0,3851,Test marié sans enfants (2 parts) avec 63994€ de revenu net (57595€ revenu fiscal de référence).
+80000,MARIE,0,0,false,2,72000,36000,8172,0,8172,Test marié sans enfants (2 parts) avec 80000€ de revenu net (72000€ revenu fiscal de référence).
+178853,MARIE,0,0,false,2,164682,82341,35977,0,35977,Test marié sans enfants (2 parts) avec 178853€ de revenu net (164682€ revenu fiscal de référence).
+178854,MARIE,0,0,false,2,164683,"82341,5",35977,0,35977,Test marié sans enfants (2 parts) avec 178854€ de revenu net (164683€ revenu fiscal de référence).
+178855,MARIE,0,0,false,2,164684,82342,35978,0,35978,Test marié sans enfants (2 parts) avec 178855€ de revenu net (164684€ revenu fiscal de référence).
+269269,MARIE,0,0,false,2,255098,127549,73048,0,73048,Test marié sans enfants (2 parts) avec 269269€ de revenu net (255098€ revenu fiscal de référence).
+368383,MARIE,0,0,false,2,354212,177106,113685,0,113685,Test marié sans enfants (2 parts) avec 368383€ de revenu net (354212€ revenu fiscal de référence).
+368384,MARIE,0,0,false,2,354213,"177106,5",113685,0,113685,Test marié sans enfants (2 parts) avec 368384€ de revenu net (354213€ revenu fiscal de référence).
+368385,MARIE,0,0,false,2,354214,177107,113685,0,113685,Test marié sans enfants (2 parts) avec 368385€ de revenu net (354214€ revenu fiscal de référence).
+368386,MARIE,0,0,false,2,354215,"177107,5",113686,0,113686,Test marié sans enfants (2 parts) avec 368386€ de revenu net (354215€ revenu fiscal de référence).
+425829,MARIE,0,0,false,2,411658,205829,139535,0,139535,Test marié sans enfants (2 parts) avec 425829€ de revenu net (411658€ revenu fiscal de référence).
+0,MARIE,1,0,false,"2,5",0,0,0,0,0,"Test marié avec 1 enfants (2,5 parts) avec 0€ de revenu net (0€ revenu fiscal de référence)."
+31374,MARIE,1,0,false,"2,5",28237,"11294,8",0,0,0,"Test marié avec 1 enfants (2,5 parts) avec 31374€ de revenu net (28237€ revenu fiscal de référence)."
+31375,MARIE,1,0,false,"2,5",28238,11295,0,0,0,"Test marié avec 1 enfants (2,5 parts) avec 31375€ de revenu net (28238€ revenu fiscal de référence)."
+31377,MARIE,1,0,false,"2,5",28239,"11295,6",0,0,0,"Test marié avec 1 enfants (2,5 parts) avec 31377€ de revenu net (28239€ revenu fiscal de référence)."
+31378,MARIE,1,0,false,"2,5",28240,11296,1,1,0,"Test marié avec 1 enfants (2,5 parts) avec 31378€ de revenu net (28240€ revenu fiscal de référence)."
+41417,MARIE,1,0,false,"2,5",,,994,994,0,
+41418,MARIE,1,0,false,"2,5",,,995,994,1,
+60000,MARIE,1,0,false,"2,5",54000,21600,2834,162,2672,"Test marié avec 1 enfants (2,5 parts) avec 60000€ de revenu net (54000€ revenu fiscal de référence)."
 79992,MARIE,1,0,false,"2,5",71993,"28797,2",6411,,,"Test marié avec 1 enfants (2,5 parts) avec 79992€ de revenu net (71993€ revenu fiscal de référence)."
 79993,MARIE,1,0,false,"2,5",71994,"28797,6",6412,,,"Test marié avec 1 enfants (2,5 parts) avec 79993€ de revenu net (71994€ revenu fiscal de référence)."
 79994,MARIE,1,0,false,"2,5",71995,28798,6412,,,"Test marié avec 1 enfants (2,5 parts) avec 79994€ de revenu net (71995€ revenu fiscal de référence)."
