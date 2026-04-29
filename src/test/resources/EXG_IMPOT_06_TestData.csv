@@ -1,62 +1,66 @@
-revenuNet,situation,nbEnfants,nbEnfantsH,parentIsole,impotAttendu,,,,description
-4000,CELIBATAIRE,0,0,false,0,,,,EXG_02 - Revenu faible abattement planché au minimum 495
-35000,CELIBATAIRE,0,0,false,2736,,,,EXG_02 - Revenu nominal abattement 10%
-141710,CELIBATAIRE,0,0,false,0,,,,EXG_02 - Revenu limite abattement exactement 14171
-200000,CELIBATAIRE,0,0,false,0,,,,EXG_02 - Revenu élevé abattement plafonné au maximum 14171
-35000,CELIBATAIRE,0,0,false,0,,,,EXG_03 - Célibataire sans enfant 1 part
-35000,MARIE,0,0,false,0,,,,EXG_03 - Marié sans enfant 2 parts
-35000,PACSE,0,0,false,0,,,,EXG_03 - Pacsé sans enfant 2 parts
-35000,DIVORCE,0,0,false,0,,,,EXG_03 - Divorcé sans enfant 1 part
-35000,VEUF,0,0,false,0,,,,EXG_03 - Veuf sans enfant 1 part
-35000,VEUF,1,0,false,0,,,,EXG_03 - Veuf 1 enfant conserve part conjoint 2.5 parts
-35000,VEUF,2,0,false,0,,,,EXG_03 - Veuf 2 enfants conserve part conjoint 3 parts
-35000,VEUF,3,0,false,0,,,,EXG_03 - Veuf 3 enfants conserve part conjoint 4 parts
-35000,CELIBATAIRE,1,0,false,0,,,,EXG_03 - Célibataire 1 enfant 1.5 parts
-35000,CELIBATAIRE,2,0,false,0,,,,EXG_03 - Célibataire 2 enfants 2 parts
-35000,CELIBATAIRE,3,0,false,0,,,,EXG_03 - Célibataire 3 enfants 3 parts 3e enfant vaut 1 part
-35000,CELIBATAIRE,4,0,false,0,,,,EXG_03 - Célibataire 4 enfants 4 parts
-35000,CELIBATAIRE,7,0,false,0,,,,EXG_03 - Célibataire 7 enfants limite max enfants
-35000,MARIE,1,0,false,0,,,,EXG_03 - Marié 1 enfant 2.5 parts
-35000,MARIE,2,0,false,0,,,,EXG_03 - Marié 2 enfants 3 parts
-35000,MARIE,3,0,false,0,,,,EXG_03 - Marié 3 enfants 4 parts
-35000,CELIBATAIRE,1,1,false,0,,,,EXG_03 - Célibataire 1 enfant dont 1 handicapé 2 parts
-35000,CELIBATAIRE,2,1,false,0,,,,EXG_03 - Célibataire 2 enfants dont 1 handicapé 2.5 parts
-35000,CELIBATAIRE,2,2,false,0,,,,EXG_03 - Célibataire 2 enfants dont 2 handicapés 3 parts
-35000,MARIE,3,1,false,0,,,,EXG_03 - Marié 3 enfants dont 1 handicapé 4.5 parts
-35000,DIVORCE,1,0,true,0,,,,EXG_03 - Divorcé parent isolé 1 enfant 2 parts
-35000,DIVORCE,2,0,true,0,,,,EXG_03 - Divorcé parent isolé 2 enfants 3 parts
-35000,DIVORCE,3,0,true,0,,,,EXG_03 - Divorcé parent isolé 3 enfants 4.5 parts
-35000,CELIBATAIRE,0,0,true,0,,,,EXG_03 - Célibataire parent isolé sans enfant pas de demi-part bonus
-10000,CELIBATAIRE,0,0,false,0,,,,EXG_04 - Tranche 0% revenu sous 11294
-11294,CELIBATAIRE,0,0,false,0,,,,EXG_04 - Tranche 0% limite haute exacte 11294
-15000,CELIBATAIRE,0,0,false,0,,,,EXG_04 - Tranche 11% revenu nominal
-28797,CELIBATAIRE,0,0,false,0,,,,EXG_04 - Tranche 11% limite haute exacte 28797
-28798,CELIBATAIRE,0,0,false,0,,,,EXG_04 - Tranche 30% limite basse exacte 28798
-60000,CELIBATAIRE,0,0,false,0,,,,EXG_04 - Tranche 30% revenu nominal
-82341,CELIBATAIRE,0,0,false,0,,,,EXG_04 - Tranche 30% limite haute exacte 82341
-82342,CELIBATAIRE,0,0,false,0,,,,EXG_04 - Tranche 41% limite basse exacte 82342
-150000,CELIBATAIRE,0,0,false,0,,,,EXG_04 - Tranche 41% revenu nominal
-177106,CELIBATAIRE,0,0,false,0,,,,EXG_04 - Tranche 41% limite haute exacte 177106
-177107,CELIBATAIRE,0,0,false,0,,,,EXG_04 - Tranche 45% limite basse exacte 177107
-250000,CELIBATAIRE,0,0,false,0,,,,EXG_04 - Tranche 45% revenu nominal
-200000,CELIBATAIRE,1,0,false,0,,,,EXG_05 - Plafond actif célibataire 1 enfant gain max 1759
-200000,CELIBATAIRE,2,0,false,0,,,,EXG_05 - Plafond actif célibataire 2 enfants gain max 3518
-200000,CELIBATAIRE,3,0,false,0,,,,EXG_05 - Plafond actif célibataire 3 enfants gain max 7036
-200000,MARIE,1,0,false,0,,,,EXG_05 - Plafond actif marié 1 enfant gain max 1759
-200000,MARIE,3,0,false,0,,,,EXG_05 - Plafond actif marié 3 enfants gain max 7036
-200000,MARIE,3,1,false,0,,,,EXG_05 - Plafond actif marié 3 enfants dont 1 handicapé gain max 8795
-35000,MARIE,1,0,false,0,,,,EXG_05 - Plafond non actif revenu faible marié 1 enfant
-35000,CELIBATAIRE,1,0,false,0,,,,EXG_05 - Plafond non actif revenu faible célibataire 1 enfant
-15000,CELIBATAIRE,0,0,false,0,,,,EXG_06 - Décote célibataire active revenu modeste
-20000,CELIBATAIRE,0,0,false,0,,,,EXG_06 - Décote célibataire active revenu intermédiaire
-25000,MARIE,0,0,false,0,,,,EXG_06 - Décote couple active revenu modeste
-30000,MARIE,0,0,false,0,,,,EXG_06 - Décote couple active revenu intermédiaire
-80000,CELIBATAIRE,0,0,false,0,,,,EXG_06 - Pas de décote célibataire revenu élevé
-60000,MARIE,0,0,false,0,,,,EXG_06 - Pas de décote couple revenu élevé
-300000,CELIBATAIRE,0,0,false,0,,,,EXG_07 - Célibataire tranche 3% entre 250001 et 500000
-600000,CELIBATAIRE,0,0,false,0,,,,EXG_07 - Célibataire tranche 4% entre 500001 et 1000000
-1200000,CELIBATAIRE,0,0,false,0,,,,EXG_07 - Célibataire tranche 4% au delà de 1000000
-600000,MARIE,0,0,false,0,,,,EXG_07 - Couple tranche 3% entre 500001 et 1000000
-1200000,MARIE,0,0,false,0,,,,EXG_07 - Couple tranche 4% au delà de 1000000
-250000,CELIBATAIRE,0,0,false,0,,,,EXG_07 - Célibataire sous le seuil pas de contribution exceptionnelle
-500000,MARIE,0,0,false,0,,,,EXG_07 - Couple sous le seuil pas de contribution exceptionnelle
+revenuNet,situationMaritale,nbEnfants,nbEnfantsH,parentIsole,nbParts,revenuFiscalDeReference,revenuFiscalDeReferenceParParts,impotAvantDecote,decote,impotApresDecote,description
+-1,CELIBATAIRE,0,0,false,1,0,0,IllegalArgumentException,0,IllegalArgumentException,Test exception revenu net négatif.
+0,CELIBATAIRE,0,0,false,1,0,0,0,0,0,Test célibataire sans enfants (1 part) avec 0€ de revenu net (pas d’impôt).
+12549,CELIBATAIRE,0,0,false,1,11294,11294,0,0,0,"Test célibataire sans enfants (1 part) avec 12549€ de revenu net (pas d’impôt, 11294€ revenu fiscal de référence)."
+12550,CELIBATAIRE,0,0,false,1,11295,11295,0,0,0,Test célibataire sans enfants (1 part) avec 12550€ de revenu net (11295€ de revenu fiscal de référence).
+12553,CELIBATAIRE,0,0,false,1,11298,11298,0,0,0,Test célibataire sans enfants (1 part) avec 12553€ de revenu net (11298€ de revenu fiscal de référence).
+12554,CELIBATAIRE,0,0,false,1,11299,11299,1,1,0,Test célibataire sans enfants (1 part) avec 12554€ de revenu net (11299€ de revenu fiscal de référence).
+18615,CELIBATAIRE,0,0,false,1,16754,16754,600,600,0,Test célibataire sans enfants (1 part) avec 18615€ de revenu net (16754€ de revenu fiscal de référence).
+18616,CELIBATAIRE,0,0,false,1,16754,16754,601,601,0,Test célibataire sans enfants (1 part) avec 18616€ de revenu net (16754€ de revenu fiscal de référence).
+18625,CELIBATAIRE,0,0,false,1,16763,16763,601,601,0,Test célibataire sans enfants (1 part) avec 18625€ de revenu net (16763€ de revenu fiscal de référence).
+18626,CELIBATAIRE,0,0,false,1,16763,16763,602,601,1,Test célibataire sans enfants (1 part) avec 18626€ de revenu net (16763€ de revenu fiscal de référence).
+20000,CELIBATAIRE,0,0,false,1,18000,18000,738,539,199,Test célibataire sans enfants (1 part) avec 20000€ de revenu net (18000€ de revenu fiscal de référence).
+24000,CELIBATAIRE,0,0,false,1,21600,21600,1134,360,774,Test célibataire sans enfants (1 part) avec 24000€ de revenu net (21600€ de revenu fiscal de référence).
+31997,CELIBATAIRE,0,0,false,1,28797,28797,1925,2,1923,Test célibataire sans enfants (1 part) avec 31997€ de revenu net (28797€ de revenu fiscal de référence).
+31998,CELIBATAIRE,0,0,false,1,28798,28798,1926,1,1925,Test célibataire sans enfants (1 part) avec 31998€ de revenu net (28798€ de revenu fiscal de référence).
+32008,CELIBATAIRE,0,0,false,1,28807,28807,1928,1,1927,Test célibataire sans enfants (1 part) avec 32008€ de revenu net (28807€ de revenu fiscal de référence).
+32009,CELIBATAIRE,0,0,false,1,28808,28808,1929,0,1929,Test célibataire sans enfants (1 part) avec 32009€ de revenu net (28808€ de revenu fiscal de référence).
+40000,CELIBATAIRE,0,0,false,1,36000,36000,4086,0,4086,Test célibataire sans enfants (1 part) avec 40000€ de revenu net (36000€ de revenu fiscal de référence).
+91490,CELIBATAIRE,0,0,false,1,82341,82341,17989,0,17989,Test célibataire sans enfants (1 part) avec 91490€ de revenu net (82341€ de revenu fiscal de référence).
+91491,CELIBATAIRE,0,0,false,1,82342,82342,17989,0,17989,Test célibataire sans enfants (1 part) avec 91491€ de revenu net (82342€ de revenu fiscal de référence).
+91493,CELIBATAIRE,0,0,false,1,82344,82344,17990,0,17990,Test célibataire sans enfants (1 part) avec 91493€ de revenu net (82344€ de revenu fiscal de référence).
+141710,CELIBATAIRE,0,0,false,1,127539,127539,36520,0,36520,Test célibataire sans enfants (1 part) avec 141710€ de revenu net (127539€ de revenu fiscal de référence) (abattement maximal).
+141711,CELIBATAIRE,0,0,false,1,127540,127540,36520,0,36520,Test célibataire sans enfants (1 part) avec 141711€ de revenu net (127540€ de revenu fiscal de référence) (abattement maximal).
+141720,CELIBATAIRE,0,0,false,1,127549,127549,36524,0,36524,Test célibataire sans enfants (1 part) avec 141720€ de revenu net (127549€ de revenu fiscal de référence) (abattement maximal).
+191277,CELIBATAIRE,0,0,false,1,177106,177106,56842,0,56842,Test célibataire sans enfants (1 part) avec 191277€ de revenu net (177106€ de revenu fiscal de référence) (abattement maximal).
+191278,CELIBATAIRE,0,0,false,1,177107,177107,56843,0,56843,Test célibataire sans enfants (1 part) avec 191278€ de revenu net (177107€ de revenu fiscal de référence) (abattement maximal).
+220000,CELIBATAIRE,0,0,false,1,205829,205829,69768,0,69768,Test célibataire sans enfants (1 part) avec 220000€ de revenu net (205829€ de revenu fiscal de référence) (abattement maximal).
+0,MARIE,0,0,false,2,0,0,0,,,Test marié sans enfants (2 part) avec 0€ de revenu net (pas d’impôt).
+25098,MARIE,0,0,false,2,22588,11294,0,,,Test marié sans enfants (2 parts) avec 25098€ de revenu net (22588€ revenu fiscal de référence).
+25099,MARIE,0,0,false,2,22589,"11294,5",0,,,Test marié sans enfants (2 parts) avec 25099€ de revenu net (22589€ revenu fiscal de référence).
+25100,MARIE,0,0,false,2,22590,11295,0,,,Test marié sans enfants (2 parts) avec 25100€ de revenu net (22590€ revenu fiscal de référence).
+25102,MARIE,0,0,false,2,22592,11296,0,,,Test marié sans enfants (2 parts) avec 25102€ de revenu net (22592€ revenu fiscal de référence).
+25103,MARIE,0,0,false,2,22593,"11296,5",1,,,Test marié sans enfants (2 parts) avec 25103€ de revenu net (22593€ revenu fiscal de référence).
+40000,MARIE,0,0,false,2,36000,18000,1475,,,Test marié sans enfants (2 parts) avec 40000€ de revenu net (36000€ revenu fiscal de référence).
+57325,PACSE,0,0,false,2,51593,"25796,5",3190,1,,
+57326,PACSE,0,0,false,2,51593,"25796,5",,0,,
+63993,MARIE,0,0,false,2,57594,28797,3851,,,Test marié sans enfants (2 parts) avec 63993€ de revenu net (57594€ revenu fiscal de référence).
+63994,MARIE,0,0,false,2,57595,"28797,5",3851,,,Test marié sans enfants (2 parts) avec 63994€ de revenu net (57595€ revenu fiscal de référence).
+80000,MARIE,0,0,false,2,72000,36000,8172,,,Test marié sans enfants (2 parts) avec 80000€ de revenu net (72000€ revenu fiscal de référence).
+178853,MARIE,0,0,false,2,164682,82341,35977,,,Test marié sans enfants (2 parts) avec 178853€ de revenu net (164682€ revenu fiscal de référence).
+178854,MARIE,0,0,false,2,164683,"82341,5",35977,,,Test marié sans enfants (2 parts) avec 178854€ de revenu net (164683€ revenu fiscal de référence).
+178855,MARIE,0,0,false,2,164684,82342,35978,,,Test marié sans enfants (2 parts) avec 178855€ de revenu net (164684€ revenu fiscal de référence).
+269269,MARIE,0,0,false,2,255098,127549,73048,,,Test marié sans enfants (2 parts) avec 269269€ de revenu net (255098€ revenu fiscal de référence).
+368383,MARIE,0,0,false,2,354212,177106,113685,,,Test marié sans enfants (2 parts) avec 368383€ de revenu net (354212€ revenu fiscal de référence).
+368384,MARIE,0,0,false,2,354213,"177106,5",113685,,,Test marié sans enfants (2 parts) avec 368384€ de revenu net (354213€ revenu fiscal de référence).
+368385,MARIE,0,0,false,2,354214,177107,113685,,,Test marié sans enfants (2 parts) avec 368385€ de revenu net (354214€ revenu fiscal de référence).
+368386,MARIE,0,0,false,2,354215,"177107,5",113686,,,Test marié sans enfants (2 parts) avec 368386€ de revenu net (354215€ revenu fiscal de référence).
+425829,MARIE,0,0,false,2,411658,205829,139535,,,Test marié sans enfants (2 parts) avec 425829€ de revenu net (411658€ revenu fiscal de référence).
+0,MARIE,1,0,false,"2,5",0,0,0,,,"Test marié avec 1 enfants (2,5 parts) avec 0€ de revenu net (0€ revenu fiscal de référence)."
+31374,MARIE,1,0,false,"2,5",28237,"11294,8",0,,,"Test marié avec 1 enfants (2,5 parts) avec 31374€ de revenu net (28237€ revenu fiscal de référence)."
+31375,MARIE,1,0,false,"2,5",28238,11295,0,,,"Test marié avec 1 enfants (2,5 parts) avec 31375€ de revenu net (28238€ revenu fiscal de référence)."
+31377,MARIE,1,0,false,"2,5",28239,"11295,6",0,,,"Test marié avec 1 enfants (2,5 parts) avec 31377€ de revenu net (28239€ revenu fiscal de référence)."
+31378,MARIE,1,0,false,"2,5",28240,11296,1,,,"Test marié avec 1 enfants (2,5 parts) avec 31378€ de revenu net (28240€ revenu fiscal de référence)."
+60000,MARIE,1,0,false,"2,5",54000,21600,2834,,,"Test marié avec 1 enfants (2,5 parts) avec 60000€ de revenu net (54000€ revenu fiscal de référence)."
+79992,MARIE,1,0,false,"2,5",71993,"28797,2",6411,,,"Test marié avec 1 enfants (2,5 parts) avec 79992€ de revenu net (71993€ revenu fiscal de référence)."
+79993,MARIE,1,0,false,"2,5",71994,"28797,6",6412,,,"Test marié avec 1 enfants (2,5 parts) avec 79993€ de revenu net (71994€ revenu fiscal de référence)."
+79994,MARIE,1,0,false,"2,5",71995,28798,6412,,,"Test marié avec 1 enfants (2,5 parts) avec 79994€ de revenu net (71995€ revenu fiscal de référence)."
+140000,MARIE,1,0,false,"2,5",126000,50400,22613,,,"Test marié avec 1 enfants (2,5 parts) avec 140000€ de revenu net (126000€ revenu fiscal de référence)."
+220024,MARIE,1,0,false,"2,5",205853,"82341,2",51098,,,"Test marié avec 1 enfants (2,5 parts) avec 220024€ de revenu net (205853€ revenu fiscal de référence)."
+220025,MARIE,1,0,false,"2,5",205854,"82341,6",51099,,,"Test marié avec 1 enfants (2,5 parts) avec 220025€ de revenu net (205854€ revenu fiscal de référence)."
+220026,MARIE,1,0,false,"2,5",205855,82342,51099,,,"Test marié avec 1 enfants (2,5 parts) avec 220026€ de revenu net (205855€ revenu fiscal de référence)."
+300000,MARIE,1,0,false,"2,5",285829,"114331,6",83888,,,"Test marié avec 1 enfants (2,5 parts) avec 300000€ de revenu net (285829€ revenu fiscal de référence)."
+456937,MARIE,1,0,false,"2,5",442766,"177106,4",151775,,,"Test marié avec 1 enfants (2,5 parts) avec 456937€ de revenu net (442766€ revenu fiscal de référence)."
+456938,MARIE,1,0,false,"2,5",442767,"177106,8",151775,,,"Test marié avec 1 enfants (2,5 parts) avec 456938€ de revenu net (442767€ revenu fiscal de référence)."
+456939,MARIE,1,0,false,"2,5",442768,"177107,2",151776,,,"Test marié avec 1 enfants (2,5 parts) avec 456939€ de revenu net (442768€ revenu fiscal de référence)."
+600000,MARIE,1,0,false,"2,5",585829,"234331,6",216153,,,"Test marié avec 1 enfants (2,5 parts) avec 600000€ de revenu net (585829€ revenu fiscal de référence)."
