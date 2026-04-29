@@ -3,12 +3,12 @@ package com.kerware.simulateur.codeReusine;
 /**
  * Résultat détaillé d'un calcul d'impôt sur le revenu.
  *
- * Classe immuable exposant toutes les étapes intermédiaires pour la
+ * Classe exposant toutes les étapes intermédiaires pour la
  * traçabilité et les tests unitaires.
  */
 public final class ResultatImpot {
  
-    private final int    revenuNet;
+    private int    revenuNet;
     private final int    abattement;
     private final int    revenuFiscalDeReference;
     private final double partsDeclarants;
@@ -19,7 +19,7 @@ public final class ResultatImpot {
     private final long   decote;
     private final long   impotNet;
  
-    /** Constructeur package-private : instancié uniquement par {@link Simulateur}. */
+    /** Constructeur package-private : instancié uniquement par . */
     ResultatImpot(
             int    revenuNet,
             int    abattement,
@@ -45,16 +45,16 @@ public final class ResultatImpot {
     }
  
     // -------------------------------------------------------------------------
-    // Accesseurs
+    // Getters
     // -------------------------------------------------------------------------
  
-    /** Revenu net déclaré (entrée du simulateur). */
+    /** Revenu net déclaré. */
     public int getRevenuNet() { return revenuNet; }
  
     /** Abattement pour frais professionnels déduit. */
     public int getAbattement() { return abattement; }
  
-    /** Revenu fiscal de référence (revenuNet − abattement). */
+    /** Revenu fiscal de référence. */
     public int getRevenuFiscalDeReference() { return revenuFiscalDeReference; }
  
     /** Nombre de parts des seuls déclarants. */
@@ -75,8 +75,9 @@ public final class ResultatImpot {
     /** Montant de la décote appliquée. */
     public long getDecote() { return decote; }
  
-    /** Impôt net final dû (après décote). */
+    /** Impôt net final dû. */
     public long getImpotNet() { return impotNet; }
+    
  
     @Override
     public String toString() {

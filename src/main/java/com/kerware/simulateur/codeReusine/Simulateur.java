@@ -1,5 +1,7 @@
 package com.kerware.simulateur.codeReusine;
 
+import com.kerware.simulateur.SituationFamiliale;
+
 /**
  * Simulateur de l'impôt sur le revenu en France.
  *
@@ -17,7 +19,7 @@ public class Simulateur {
     private final CalculateurDecote             calculateurDecote;
  
     // -------------------------------------------------------------------------
-    // État du formulaire (API fluente)
+    // État du formulaire 
     // -------------------------------------------------------------------------
  
     private int                revenuNet;
@@ -26,7 +28,7 @@ public class Simulateur {
     private int                nombreEnfantsHandicapes;
     private boolean            estParentIsole;
  
-    // Dernier résultat calculé (pour les getters de compatibilité)
+    // Dernier résultat calculé 
     private ResultatImpot dernierResultat;
  
     // -------------------------------------------------------------------------
@@ -73,7 +75,7 @@ public class Simulateur {
      * @param nombreEnfants              nombre d'enfants à charge
      * @param nombreEnfantsHandicapes    nombre d'enfants en situation de handicap
      * @param estParentIsole             true si le déclarant est parent isolé
-     * @return {@link ResultatImpot} contenant l'impôt net et toutes les étapes intermédiaires
+     * @return  contenant l'impôt net et toutes les étapes intermédiaires
      * @throws IllegalArgumentException si les paramètres sont incohérents
      */
     public ResultatImpot calculer(
@@ -125,7 +127,7 @@ public class Simulateur {
     }
  
     // -------------------------------------------------------------------------
-    // API fluente (compatibilité avec tests existants)
+    // Compatibilité avec tests existants
     // -------------------------------------------------------------------------
  
     public void setRevenusNet(int revenuNet) {

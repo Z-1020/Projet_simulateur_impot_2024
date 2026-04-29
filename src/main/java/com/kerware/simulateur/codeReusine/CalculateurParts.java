@@ -1,5 +1,7 @@
 package com.kerware.simulateur.codeReusine;
 
+import com.kerware.simulateur.SituationFamiliale;
+
 /**
  * Calcul du nombre de parts fiscales d'un foyer.
  */
@@ -24,7 +26,7 @@ public class CalculateurParts {
      * @param nombreEnfants      nombre d'enfants à charge (nécessaire pour le cas VEUF)
      * @return nombre de parts des déclarants
      */
-    public double calculerPartsDeclarants(SituationFamiliale situationFamiliale, int nombreEnfants) {
+    public double calculerPartsDeclarants( SituationFamiliale situationFamiliale, int nombreEnfants) {
         return switch (situationFamiliale) {
             case CELIBATAIRE, DIVORCE -> 1.0;
             case MARIE                -> 2.0;
@@ -55,6 +57,8 @@ public class CalculateurParts {
  
         return partsDeclarants + partsEnfants + majorationParentIsole + majorationHandicap;
     }
+    
+    
  
     // -------------------------------------------------------------------------
     // Méthode privée

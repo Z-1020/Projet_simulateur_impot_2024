@@ -3,7 +3,6 @@ package com.kerware.simulateur.codeReusine;
 /**
  * Barème progressif de l'impôt sur le revenu 2024 (revenus 2023).
  *
- * Exigence : ART. 197 CGI - Barème de l'impôt sur le revenu.
  *
  * Chaque tranche définit une limite inférieure et le taux applicable
  * aux revenus compris dans cette tranche.
