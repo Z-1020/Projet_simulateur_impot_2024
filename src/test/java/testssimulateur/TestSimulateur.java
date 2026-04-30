@@ -4,11 +4,12 @@ import com.kerware.simulateur.AdaptateurVersCodeHerite;
 import com.kerware.simulateur.ICalculateurImpot;
 import com.kerware.simulateur.SituationFamiliale;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestSimulateur {
     static final int CODE_HERITE = 1;
@@ -21,6 +22,35 @@ public class TestSimulateur {
             case  CODE_HERITE -> calculateur = new AdaptateurVersCodeHerite();
             case  CODE_REUSINE -> calculateur = null;
         }
+    }
+
+
+    @Test
+    @DisplayName("Test négatif setRevenuNet()")
+    public void testNegatifSetRevenuNet(){
+        assertThrows(IllegalArgumentException.class, () -> calculateur.setRevenusNet(-1));
+        assertDoesNotThrow(() -> calculateur.setRevenusNet(0));
+        assertDoesNotThrow(() -> calculateur.setRevenusNet(1));
+    }
+
+    @Test
+    @DisplayName("Test négatif setNbEnfantsACharge()")
+    public void testNegatifSetNbEnfantsACharge(){
+        assertThrows(IllegalArgumentException.class, () -> calculateur.setNbEnfantsACharge(-1));
+        assertDoesNotThrow(() -> calculateur.setNbEnfantsACharge(0));
+        assertDoesNotThrow(() -> calculateur.setNbEnfantsACharge(1));
+    }
+
+    @Test
+    @DisplayName("Test négatif setNbEnfantsSituationHandicap()")
+    public void testNegatifSetNbEnfantsSituationHandicap(){
+        assertThrows(IllegalArgumentException.class, () -> calculateur.setNbEnfantsSituationHandicap(-1));
+        assertDoesNotThrow(() -> calculateur.setNbEnfantsACharge(0));
+        calculateur.setNbEnfantsACharge(1);
+        assertDoesNotThrow(() -> calculateur.setNbEnfantsSituationHandicap(0));
+        assertDoesNotThrow(() -> calculateur.setNbEnfantsSituationHandicap(1));
+        assertThrows(IllegalArgumentException.class, () -> calculateur.setNbEnfantsSituationHandicap(2));
+
     }
 
     private void tester(int revenuNet, SituationFamiliale sf, int nbEnfants, int nbEnfantsH, boolean parentIsole, int impotSurRevenuNetAttendu) {
