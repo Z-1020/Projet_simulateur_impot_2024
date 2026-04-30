@@ -8,7 +8,7 @@ package com.kerware.simulateur.codeReusine;
  */
 public final class ResultatImpot {
  
-    private int    revenuNet;
+    private final int    revenuNet;
     private final int    abattement;
     private final int    revenuFiscalDeReference;
     private final double partsDeclarants;

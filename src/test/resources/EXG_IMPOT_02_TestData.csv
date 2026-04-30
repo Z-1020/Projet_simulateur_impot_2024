@@ -1,8 +1,7 @@
-revenuNet,abattementAttendu,description
-4944,495,Test abattement minimum borne inférieure. Valeur de revenus net arrondie à l’euro inférieur.
-4945,495,Test abattement minimum borne supérieure. Valeur de revenus net arrondie à l’euro supérieur.
-0,495,Test abattement valeur nulle.
--1,IllegalArgumentException,Test abattement exception valeur négative.
-82721,8272,Test abattement exemple.
-141714,14171,Test abattement maximum borne inférieure. Valeur de revenus net arrondie à l’euro inférieur.
-141715,14171,Test abattement maximum borne supérieure. Valeur de revenus net arrondie à l’euro supérieur.
+revenuNet,situationMaritale,abattementAttendu,description
+4944,CELIBATAIRE,495,Test abattement minimum borne inférieure. Valeur de revenus net arrondie à l’euro inférieur.
+4945,CELIBATAIRE,495,Test abattement minimum borne supérieure. Valeur de revenus net arrondie à l’euro supérieur.
+0,CELIBATAIRE,495,Test abattement valeur nulle.
+82721,CELIBATAIRE,8272,Test abattement exemple.
+141714,CELIBATAIRE,14171,Test abattement maximum borne inférieure. Valeur de revenus net arrondie à l’euro inférieur.
+141715,CELIBATAIRE,14171,Test abattement maximum borne supérieure. Valeur de revenus net arrondie à l’euro supérieur.

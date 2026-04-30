@@ -85,11 +85,12 @@ public class Simulateur {
             int                nombreEnfantsHandicapes,
             boolean            estParentIsole) {
  
-        validerParametres(revenuNet, nombreEnfants, nombreEnfantsHandicapes);
+        validerParametres(revenuNet, nombreEnfants, nombreEnfantsHandicapes, estParentIsole);
  
         // --- Étape 1 : abattement et revenu fiscal de référence ---
         int abattement              = abattementService.calculerAbattement(revenuNet);
-        int revenuFiscalDeReference = revenuNet - abattement;
+        int revenuFiscalDeReference = Math.max(0,revenuNet - abattement);
+
  
         // --- Étape 2 : nombre de parts ---
         double partsDeclarants = calculateurParts.calculerPartsDeclarants(situationFamiliale, nombreEnfants);
@@ -109,7 +110,9 @@ public class Simulateur {
  
         // --- Étape 5 : décote ---
         long decote   = calculateurDecote.calculerDecote(impotApresPlafonnement, partsDeclarants);
+        decote = Math.max(0,decote);
         long impotNet = impotApresPlafonnement - decote;
+        impotNet = Math.max(0,impotNet);
  
         dernierResultat = new ResultatImpot(
                 revenuNet,
@@ -163,11 +166,11 @@ public class Simulateur {
     // --- Getters de compatibilité (délèguent au dernier résultat) ---
  
     public int getRevenuFiscalDeReference() {
-        return dernierResultat == null ? 0 : (int) dernierResultat.getRevenuFiscalDeReference();
+        return dernierResultat == null ? 0 : dernierResultat.getRevenuFiscalDeReference();
     }
  
     public int getAbattement() {
-        return dernierResultat == null ? 0 : (int) dernierResultat.getAbattement();
+        return dernierResultat == null ? 0 : dernierResultat.getAbattement();
     }
  
     public double getNbPartsFoyerFiscal() {
@@ -177,7 +180,7 @@ public class Simulateur {
     public int getDecote() {
         return dernierResultat == null ? 0 : (int) dernierResultat.getDecote();
     }
- 
+
     public int getImpotSurRevenuNet() {
         return dernierResultat == null ? 0 : (int) dernierResultat.getImpotNet();
     }
@@ -186,7 +189,7 @@ public class Simulateur {
     // Validation des paramètres
     // -------------------------------------------------------------------------
  
-    private void validerParametres(int revenuNet, int nombreEnfants, int nombreEnfantsHandicapes) {
+    private void validerParametres(int revenuNet, int nombreEnfants, int nombreEnfantsHandicapes, boolean estParentIsole) {
         if (revenuNet < 0) {
             throw new IllegalArgumentException("Le revenu net ne peut pas être négatif.");
         }
@@ -199,6 +202,9 @@ public class Simulateur {
         if (nombreEnfantsHandicapes > nombreEnfants) {
             throw new IllegalArgumentException(
                 "Le nombre d'enfants en situation de handicap ne peut pas dépasser le nombre total d'enfants à charge.");
+        }
+        if(estParentIsole && nombreEnfants<1){
+            throw new IllegalArgumentException("Ne peut pas être un parent isolé s'il n'a pas d'enfants.");
         }
     }
  

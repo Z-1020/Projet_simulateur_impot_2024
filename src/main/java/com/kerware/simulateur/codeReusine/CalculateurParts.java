@@ -29,8 +29,8 @@ public class CalculateurParts {
     public double calculerPartsDeclarants( SituationFamiliale situationFamiliale, int nombreEnfants) {
         return switch (situationFamiliale) {
             case CELIBATAIRE, DIVORCE -> 1.0;
-            case MARIE                -> 2.0;
-            case VEUF                 -> 1.0; // Le veuf sans enfant = 1 part (2 parts uniquement via quotient)
+            case MARIE, PACSE         -> 2.0;
+            case VEUF -> (nombreEnfants < 1) ? 1.0 : 2.0; // Le veuf sans enfant = 1 part (2 parts uniquement avec un ou plusieurs enfants)
 		default -> throw new IllegalArgumentException("Unexpected value: " + situationFamiliale);
         };
     }

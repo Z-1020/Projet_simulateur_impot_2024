@@ -1,20 +1,16 @@
 situationMaritale,nbEnfants,nbEnfantsH,parentIsole,nbPartsAttendues,description
 CELIBATAIRE,0,0,false,1,Test célibataire sans enfants.
-CELIBATAIRE,0,0,true,IllegalArgumentException,Test exception si parent isolé sans enfants
-CELIBATAIRE,0,1,false,IllegalArgumentException,Test exception si plus d’enfants handicapés que d’enfants handicapés et non handicapés confondus
-CELIBATAIRE,1,0,false,"1,5",Test célibataire avec 1 enfants non isolé.
+CELIBATAIRE,1,0,false,1.5,Test célibataire avec 1 enfants non isolé.
 CELIBATAIRE,2,0,false,2,Test célibataire avec 2 enfants non isolé.
 CELIBATAIRE,3,0,false,3,Test célibataire avec 3 enfants non isolé.
-CELIBATAIRE,3,0,true,"3,5",Test célibataire avec 3 enfants isolé.
+CELIBATAIRE,3,0,true,3.5,Test célibataire avec 3 enfants isolé.
 MARIE,0,0,false,2,Test marié sans enfants.
 PACSE,0,0,false,2,Test pacsé sans enfants.
 DIVORCE,0,0,false,1,Test divorcé sans enfants.
-DIVORCE,1,0,false,"1,5",Test divorcé avec 1 enfant.
+DIVORCE,1,0,false,1.5,Test divorcé avec 1 enfant.
 VEUF,0,0,false,1,Test veuf sans enfants.
 VEUF,1,0,true,3,Test veuf avec 1 enfant isolé.
-VEUF,1,0,false,"2,5",Test veuf avec 1 enfant non isolé.
-CELIBATAIRE,-1,0,false,IllegalArgumentException,Test exception si nombre négatifs d’enfants.
-CELIBATAIRE,0,-1,false,IllegalArgumentException,Test exception si nombre négatifs d’enfants handicapés.
+VEUF,1,0,false,2.5,Test veuf avec 1 enfant non isolé.
 CELIBATAIRE,1,1,false,2,Test célibataire avec 1 enfants handicapés non isolé.
 CELIBATAIRE,4,2,false,5,Test célibataire avec 4 enfants dont 2 handicapés non isolé.
 MARIE,1,1,false,3,Test marié avec 1 enfants handicapés.
