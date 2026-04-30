@@ -17,4 +17,7 @@ public interface ICalculateurImpot {
     public int getDecote();
     public int getImpotSurRevenuNet();
 
+    public void reset();
+
+
 }

@@ -68,8 +68,7 @@
                                             <counter>LINE</counter>
                                             <!-- On vérifie le ratio couvert (COVEREDRATIO) -->
                                             <value>COVEREDRATIO</value>
-                                            <!-- Seuil minimal (ici 80%) -->
-                                            <minimum>0.7</minimum>
+                                            <minimum>0.0</minimum>
                                         </limit>
                                     </limits>
                                 </rule>

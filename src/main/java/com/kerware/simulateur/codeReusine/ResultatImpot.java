@@ -77,20 +77,5 @@ public final class ResultatImpot {
  
     /** Impôt net final dû. */
     public long getImpotNet() { return impotNet; }
-    
- 
-    @Override
-    public String toString() {
-        return String.format(
-            "ResultatImpot{"
-          + "revenuNet=%d, abattement=%d, revenuFiscalRef=%d, "
-          + "partsDeclarants=%.1f, partsTotales=%.1f, "
-          + "impotBrutDeclarants=%d, impotBrutFoyer=%d, "
-          + "impotApresPlafonnement=%d, decote=%d, impotNet=%d"
-          + "}",
-            revenuNet, abattement, revenuFiscalDeReference,
-            partsDeclarants, partsTotales,
-            impotBrutDeclarants, impotBrutFoyer,
-            impotApresPlafonnement, decote, impotNet);
-    }
+
 }

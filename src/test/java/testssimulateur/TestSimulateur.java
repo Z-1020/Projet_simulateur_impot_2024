@@ -5,6 +5,7 @@ import com.kerware.simulateur.ICalculateurImpot;
 import com.kerware.simulateur.SituationFamiliale;
 import com.kerware.simulateur.codeReusine.AdaptateurVersCodeReusine;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -14,10 +15,10 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestSimulateur {
-    static final int CODE_HERITE = 1;
-    static final int CODE_REUSINE = 2;
-    static final int CODE = CODE_REUSINE;
-    static ICalculateurImpot calculateur;
+    private static final int CODE_HERITE = 1;
+    private static final int CODE_REUSINE = 2;
+    private static final int CODE = CODE_REUSINE;
+    private static ICalculateurImpot calculateur;
     @BeforeAll
     public static void prepareCalculateurImpot() {
         switch( CODE ) {
@@ -26,6 +27,10 @@ public class TestSimulateur {
         }
     }
 
+    @BeforeEach
+    void reset() {
+        calculateur.reset();
+    }
 
     @Test
     @DisplayName("Test négatif setRevenuNet()")
@@ -42,6 +47,16 @@ public class TestSimulateur {
         assertDoesNotThrow(() -> calculateur.calculImpotSurRevenuNet());
         calculateur.setRevenusNet(1);
         assertDoesNotThrow(() -> calculateur.calculImpotSurRevenuNet());
+    }
+
+    @Test
+    @DisplayName("Nullité avant calcul")
+    public void testNulitéAvantCalcul(){
+        assertEquals(0, calculateur.getRevenuFiscalReference());
+        assertEquals(0, calculateur.getAbattement());
+        assertEquals(0, calculateur.getNbPartsFoyerFiscal());
+        assertEquals(0, calculateur.getDecote());
+        assertEquals(0, calculateur.getImpotSurRevenuNet());
     }
 
     @Test
@@ -91,11 +106,12 @@ public class TestSimulateur {
         calculateur.setParentIsole(true);
         assertThrows(IllegalArgumentException.class, () -> calculateur.calculImpotSurRevenuNet());
         calculateur.setNbEnfantsACharge(1);
+        calculateur.setSituationFamiliale(SituationFamiliale.CELIBATAIRE);
         assertDoesNotThrow(() -> calculateur.calculImpotSurRevenuNet());
 
     }
 
-    private void tester(int revenuNet, SituationFamiliale sf, int nbEnfants, int nbEnfantsH, boolean parentIsole, int impotSurRevenuNetAttendu) {
+    private void arrangeAndAct(int revenuNet, SituationFamiliale sf, int nbEnfants, int nbEnfantsH, boolean parentIsole) {
         // Arrange
         calculateur.setRevenusNet(revenuNet);
         calculateur.setSituationFamiliale(sf);
@@ -105,9 +121,6 @@ public class TestSimulateur {
 
         // Act
         calculateur.calculImpotSurRevenuNet();
-
-        // Assert
-        assertEquals( impotSurRevenuNetAttendu , calculateur.getImpotSurRevenuNet());
     }
 
     @ParameterizedTest(name = "EXG_IMPOT_02 {3}")
@@ -150,42 +163,27 @@ public class TestSimulateur {
         }
     }
 
-    @ParameterizedTest(name = "EXG_IMPOT_04 and EXG_IMPOT_05 {11}")
+    @ParameterizedTest(name = "EXG_IMPOT_04 and EXG_IMPOT_05 {11} {12}")
     @CsvFileSource(resources = "/EXG_IMPOT_04_05_06_TestData.csv", numLinesToSkip = 1)
-    public void testEXG_IMPOT_04_05(int revenuNet, String situationMaritale, int nbEnfants, int nbEnfantsH, boolean parentIsole, double nbParts, int revenuFiscalDeReference, double revenuFiscalDeReferenceParParts,int impotAvantDecote, int decote, int impotApresDecote, String nom, String description) {
+    public void testEXG_IMPOT_04_05(int revenuNet, String situationMaritale, int nbEnfants, int nbEnfantsH, boolean parentIsole, double nbParts, int revenuFiscalDeReference, double revenuFiscalDeReferenceParParts,int impotAvantDecote, int decote, int impotRevenuNet, String nom, String description) {
 
-        // Arrange
-        calculateur.setRevenusNet(revenuNet);
-        calculateur.setSituationFamiliale(SituationFamiliale.valueOf(situationMaritale));
-        calculateur.setNbEnfantsACharge(nbEnfants);
-        calculateur.setNbEnfantsSituationHandicap(nbEnfantsH);
-        calculateur.setParentIsole(parentIsole);
-
-        // Act
-        calculateur.calculImpotSurRevenuNet();
+        arrangeAndAct(revenuNet, SituationFamiliale.valueOf(situationMaritale), nbEnfants, nbEnfantsH, parentIsole);
 
         // Assert
         assertEquals(revenuFiscalDeReference, calculateur.getRevenuFiscalReference());
         assertEquals(impotAvantDecote, calculateur.getImpotAvantDecote());
     }
 
-    @ParameterizedTest(name = "EXG_IMPOT_06 {11}")
+    @ParameterizedTest(name = "EXG_IMPOT_06 {11} {12}")
     @CsvFileSource(resources = "/EXG_IMPOT_04_05_06_TestData.csv", numLinesToSkip = 1)
-    public void testEXG_IMPOT_06(int revenuNet, String situationMaritale, int nbEnfants, int nbEnfantsH, boolean parentIsole, double nbParts, int revenuFiscalDeReference, double revenuFiscalDeReferenceParParts,int impotAvantDecote, int decote, int impotApresDecote, String nom, String description) {
-
-        // Arrange
-        calculateur.setRevenusNet(revenuNet);
-        calculateur.setSituationFamiliale(SituationFamiliale.valueOf(situationMaritale));
-        calculateur.setNbEnfantsACharge(nbEnfants);
-        calculateur.setNbEnfantsSituationHandicap(nbEnfantsH);
-        calculateur.setParentIsole(parentIsole);
-
-        // Act
-        calculateur.calculImpotSurRevenuNet();
+    public void testEXG_IMPOT_06(int revenuNet, String situationMaritale, int nbEnfants, int nbEnfantsH, boolean parentIsole, double nbParts, int revenuFiscalDeReference, double revenuFiscalDeReferenceParParts,int impotAvantDecote, int decote, int impotRevenuNet, String nom, String description) {
+        arrangeAndAct(revenuNet, SituationFamiliale.valueOf(situationMaritale), nbEnfants, nbEnfantsH, parentIsole);
 
         // Assert
         assertEquals(decote, calculateur.getDecote());
-        assertEquals(impotApresDecote, calculateur.getImpotSurRevenuNet());
+        assertEquals(impotRevenuNet, calculateur.getImpotSurRevenuNet());
     }
+
+
 
 }

@@ -1,8 +1,8 @@
 package com.kerware.simulateur;
 
-public class AdaptateurVersCodeHerite implements ICalculateurImpot {
+public final class AdaptateurVersCodeHerite implements ICalculateurImpot {
 
-    Simulateur simulateurHerite = new Simulateur();
+    private Simulateur simulateurHerite = new Simulateur();
 
     @Override
     public void setRevenusNet(int rn) {
@@ -63,5 +63,9 @@ public class AdaptateurVersCodeHerite implements ICalculateurImpot {
     @Override
     public int getImpotSurRevenuNet() {
         return simulateurHerite.getImpotSurRevenuNet();
+    }
+
+    @Override
+    public void reset() {
     }
 }

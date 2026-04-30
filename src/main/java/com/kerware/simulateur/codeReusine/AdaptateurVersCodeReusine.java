@@ -4,9 +4,9 @@ import com.kerware.simulateur.ICalculateurImpot;
 import com.kerware.simulateur.codeReusine.Simulateur;
 import com.kerware.simulateur.SituationFamiliale;
 
-public class AdaptateurVersCodeReusine implements ICalculateurImpot {
+public final class AdaptateurVersCodeReusine implements ICalculateurImpot {
 
-    Simulateur simulateurReusine = new Simulateur();
+    private Simulateur simulateurReusine = new Simulateur();
 
     @Override
     public void setRevenusNet(int rn) {
@@ -68,4 +68,11 @@ public class AdaptateurVersCodeReusine implements ICalculateurImpot {
     public int getImpotSurRevenuNet() {
         return simulateurReusine.getImpotSurRevenuNet();
     }
+
+    @Override
+    public void reset() {
+        simulateurReusine.reset();
+    }
+
+
 }
